@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GTEC_WebCrawler</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/image/favicon.ico">	
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/noscript.css" />
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	
+	<body class="is-preload">
+		
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul id="main-menu">
+						<li>
+							<a href="/" class="active">Home</a>
+							<ul id="sub-menu">
+								<li><a href="/sample1" aria-label="subemnu">Sample1</a></li>
+								<li><a href="/sample2" aria-label="subemnu">Sample2</a></li>
+								<li><a href="/sample3" aria-label="subemnu">Sample3</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="/searchStart">SearchStart</a></li>
+						<li><a href="/visualization">Visualization</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<!-- <section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#Home">Home</a></li>
+							<li><a href="#Section1">경기과학기술대학교</a></li>
+							<li><a href="#Section2">경기과학기술대학교 입시</a></li>
+							<li><a href="#Section3">경기과학기술대학교 취업률</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section> -->
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<section id="Home" class="wrapper style1 fullscreen fade-up">
+					<div class="inner">
+						<h1>GTEC_WebCrawler</h1>
+						<p>크롤링을 활용한...</p>
+					</div>
+				</section>
+				
+				<!-- <section id="Section1" class="wrapper style2 fullscreen fade-up">			
+					<iframe src="http://localhost:5601/app/kibana#/dashboard/76f03aa0-02b6-11ea-be32-bb9bffc35a61?embed=true&_g=()" height="1000" width="100%"></iframe>
+					<a href="http://localhost:5601/app/kibana#/dashboard/2f228ab0-f498-11e9-95de-117b9745f2ff?_g=()&_a=(description:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90%22+%EB%A5%BC+%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A1%9C+%EC%88%98%EC%A7%91%ED%95%9C+%EC%95%BD+10,000%EA%B0%9C%EC%9D%98+%EC%9E%90%EB%A3%8C%EB%A5%BC+%EB%B6%84%EC%84%9D%ED%95%98%EC%97%AC+%EC%8B%9C%EA%B0%81%ED%99%94%ED%95%9C+%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EC%9E%85%EB%8B%88%EB%8B%A4.',filters:!(),fullScreenMode:!f,options:(darkTheme:!t,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:21,i:'1',w:20,x:28,y:17),id:d844c200-f495-11e9-95de-117b9745f2ff,panelIndex:'1',title:'Tag+Cloud',type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(colors:('0+-+100':%23EAB839),defaultColors:('0+-+100':'rgb(0,104,55)'),legendOpen:!f)),gridData:(h:13,i:'2',w:18,x:10,y:17),id:'1557deb0-f497-11e9-95de-117b9745f2ff',panelIndex:'2',title:'%ED%82%A4%EC%9B%8C%EB%93%9C+%EB%B6%84%EC%84%9D',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:8,i:'4',w:18,x:10,y:30),id:f5406d30-f497-11e9-95de-117b9745f2ff,panelIndex:'4',title:Count,type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(params:(sort:(columnIndex:0,direction:!n)))),gridData:(h:17,i:'5',w:9,x:39,y:0),id:e873b9b0-f49a-11e9-95de-117b9745f2ff,panelIndex:'5',title:'Top+12',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:17,i:'6',w:27,x:12,y:0),id:'90cd10d0-f49a-11e9-95de-117b9745f2ff',panelIndex:'6',title:'Horizontal+Bar',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:17,i:'7',w:12,x:0,y:0),id:'9453f0d0-f49e-11e9-95de-117b9745f2ff',panelIndex:'7',title:Description,type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(colors:('100+-+175':%23EF843C,'50+-+100':%23E0752D),defaultColors:('10+-+50':'rgb(255,255,190)','5+-+10':'rgb(0,104,55)','50+-+100':'rgb(165,0,38)'),legendOpen:!f)),gridData:(h:21,i:'8',w:10,x:0,y:17),id:ebde5af0-f4a5-11e9-95de-117b9745f2ff,panelIndex:'8',title:'%EC%A2%8B%EC%9D%80+%2F+%ED%9B%8C%EB%A5%AD%ED%95%9C+%EA%B0%9C%EC%88%98+%EB%B9%84%EA%B5%90',type:visualization,version:'6.6.1')),query:(language:lucene,query:''),timeRestore:!f,title:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90%22+',viewMode:view)&embed=true" class="button small" target="_blank">Full Screen</a>
+				</section>
+				
+				<section id="Section2" class="wrapper style3  fullscreen fade-up">
+					<iframe src="http://localhost:5601/app/kibana#/dashboard/4c514e00-03a7-11ea-a786-311bf98c7703?embed=true&_g=()" height="1000" width="100%"></iframe>
+					<a href="http://localhost:5601/app/kibana#/dashboard/cb1b8940-f9bf-11e9-a2ce-0567ba0a55f9?_g=()&_a=(description:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90+%EC%9E%85%EC%8B%9C%22+%EB%A5%BC+%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A1%9C+%EC%88%98%EC%A7%91%ED%95%9C+%EC%95%BD+8,000%EA%B0%9C%EC%9D%98+%EC%9E%90%EB%A3%8C%EB%A5%BC+%EB%B6%84%EC%84%9D%ED%95%98%EC%97%AC+%EC%8B%9C%EA%B0%81%ED%99%94%ED%95%9C+%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EC%9E%85%EB%8B%88%EB%8B%A4.',filters:!(),fullScreenMode:!f,options:(darkTheme:!t,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:22,i:'1',w:22,x:0,y:23),id:bd169620-f9bd-11e9-a2ce-0567ba0a55f9,panelIndex:'1',title:'Tag+Cloud',type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(legendOpen:!t)),gridData:(h:23,i:'2',w:30,x:0,y:0),id:'6d0e0000-f9bd-11e9-a2ce-0567ba0a55f9',panelIndex:'2',title:'Pie+Chart',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:11,i:'3',w:8,x:22,y:23),id:'0b1ea150-f9be-11e9-a2ce-0567ba0a55f9',panelIndex:'3',title:Total,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:12,i:'4',w:18,x:30,y:0),id:'39a11030-f9be-11e9-a2ce-0567ba0a55f9',panelIndex:'4',title:Description,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:21,i:'5',w:9,x:30,y:24),id:'64277cd0-f9bf-11e9-a2ce-0567ba0a55f9',panelIndex:'5',title:'%ED%82%A4%EC%9B%8C%EB%93%9C+%EB%B6%84%EC%84%9D',type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(colors:('75+-+100':%23705DA0),defaultColors:('0+-+50':'rgb(0,104,55)','50+-+75':'rgb(255,255,190)','75+-+100':'rgb(165,0,38)'),legendOpen:!f)),gridData:(h:21,i:'6',w:9,x:39,y:24),id:'9224a430-f9c1-11e9-a2ce-0567ba0a55f9',panelIndex:'6',title:'%EC%A0%95%EC%8B%9C%2F%EC%88%98%EC%8B%9C+%EA%B0%9C%EC%88%98+%EB%B9%84%EA%B5%90',type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(params:(sort:(columnIndex:1,direction:desc)))),gridData:(h:12,i:'8',w:18,x:30,y:12),id:fb1762a0-f9c8-11e9-a2ce-0567ba0a55f9,panelIndex:'8',title:'%EC%9E%85%EC%8B%9C+%EA%B4%80%EB%A0%A8+%ED%82%A4%EC%9B%8C%EB%93%9C+%EC%A7%91%EA%B3%84',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:11,i:'9',w:8,x:22,y:34),id:d6475d00-f9c7-11e9-a2ce-0567ba0a55f9,panelIndex:'9',title:'Unique+Count',type:visualization,version:'6.6.1')),query:(language:lucene,query:''),timeRestore:!f,title:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90+%EC%9E%85%EC%8B%9C%22',viewMode:view)&embed=true" class="button small" target="_blank">Full Screen</a>
+				</section>
+				
+				<section id="Section3" class="wrapper style1  fullscreen fade-up">
+					<iframe src="http://localhost:5601/app/kibana#/dashboard/8bc98d80-049d-11ea-90b9-e794d1b403fb?embed=true&_g=()" height="1000" width="100%"></iframe>
+					<a href="http://localhost:5601/app/kibana#/dashboard/1b2624c0-f9cc-11e9-a2ce-0567ba0a55f9?_g=()&_a=(description:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90+%EC%B7%A8%EC%97%85%EB%A5%A0%22+%EC%9D%84+%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A1%9C+%EC%88%98%EC%A7%91%ED%95%9C+%EC%95%BD+7,000%EA%B0%9C%EC%9D%98+%EC%9E%90%EB%A3%8C%EB%A5%BC+%EB%B6%84%EC%84%9D%ED%95%98%EC%97%AC+%EC%8B%9C%EA%B0%81%ED%99%94%ED%95%9C+%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EC%9E%85%EB%8B%88%EB%8B%A4.',filters:!(),fullScreenMode:!f,options:(darkTheme:!t,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:12,i:'1',w:20,x:28,y:17),id:'59c97c30-f9be-11e9-a2ce-0567ba0a55f9',panelIndex:'1',title:Description,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:11,i:'2',w:9,x:19,y:17),id:'8368d140-f9cc-11e9-a2ce-0567ba0a55f9',panelIndex:'2',title:Total,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:7,i:'3',w:25,x:0,y:10),id:'72688d90-f9cc-11e9-a2ce-0567ba0a55f9',panelIndex:'3',title:Controls,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:11,i:'4',w:9,x:19,y:28),id:'063be030-f9cd-11e9-a2ce-0567ba0a55f9',panelIndex:'4',title:Analyzed,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:18,i:'5',w:19,x:0,y:21),id:'54f44fa0-f9cd-11e9-a2ce-0567ba0a55f9',panelIndex:'5',title:Pie,type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:10,i:'6',w:25,x:0,y:0),id:ec142dd0-f9d0-11e9-a2ce-0567ba0a55f9,panelIndex:'6',title:'Controls+Description',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:13,i:'8',w:20,x:28,y:41),id:'9f3cac00-f9d3-11e9-a2ce-0567ba0a55f9',panelIndex:'8',title:'%EC%A2%8B%EC%9D%80%2F%ED%9B%8C%EB%A5%AD%ED%95%9C+%EA%B0%9C%EC%88%98',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:12,i:'9',w:20,x:28,y:29),id:'589f4780-f9d3-11e9-a2ce-0567ba0a55f9',panelIndex:'9',title:'%ED%82%A4%EC%9B%8C%EB%93%9C+%EB%B6%84%EC%84%9D',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:15,i:'11',w:19,x:9,y:39),id:c55800e0-f9d5-11e9-a2ce-0567ba0a55f9,panelIndex:'11',title:'Tag+Cloud',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:15,i:'12',w:9,x:0,y:39),id:'75281730-f9d6-11e9-a2ce-0567ba0a55f9',panelIndex:'12',title:'Top+10',type:visualization,version:'6.6.1'),(embeddableConfig:(),gridData:(h:4,i:'13',w:19,x:0,y:17),id:'6a6660d0-f9d7-11e9-a2ce-0567ba0a55f9',panelIndex:'13',title:Warning,type:visualization,version:'6.6.1'),(embeddableConfig:(vis:(colors:(Count:%23EA6460,'%EC%88%98%EC%A7%91%EB%90%9C+%EA%B2%8C%EC%8B%9C%EB%AC%BC+%EA%B0%9C%EC%88%98':%23EA6460),legendOpen:!f)),gridData:(h:17,i:'14',w:23,x:25,y:0),id:ce5dd670-f9d4-11e9-a2ce-0567ba0a55f9,panelIndex:'14',title:'Horizontal+bar',type:visualization,version:'6.6.1')),query:(language:lucene,query:''),timeRestore:!f,title:'%22%EA%B2%BD%EA%B8%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90+%EC%B7%A8%EC%97%85%EB%A5%A0%22',viewMode:view)&embed=true" class="button small" target="_blank">Full Screen</a>
+				</section> -->
+			</div>
+					
+		<!-- Footer -->
+			<!-- <footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer> -->
+			
+			<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+	</body>
+</html>

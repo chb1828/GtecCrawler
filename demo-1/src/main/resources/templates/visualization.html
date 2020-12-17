@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GTEC_WebCrawler</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="/image/favicon.ico">	
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/modal.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   		
+	</head>
+	
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul id="main-menu">
+						<li>
+							<a href="/">Home</a>
+							<ul id="sub-menu">
+								<li><a href="/sample1" aria-label="subemnu">Sample1</a></li>
+								<li><a href="/sample2" aria-label="subemnu">Sample2</a></li>
+								<li><a href="/sample3" aria-label="subemnu">Sample3</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="/searchStart">SearchStart</a></li>
+						<li><a href="/visualization" class="active">Visualization</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Visualization</h1>
+							<div class="table-wrapper">
+							<iframe src="http://localhost:5601/app/kibana#/dashboard/1b8ae9a0-0507-11ea-aefb-7363dd68105d?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A5000)%2Ctime%3A(from%3Anow-15m%2Cmode%3Aquick%2Cto%3Anow))" height="1060" width="100%"></iframe>
+								<button type="button" id="searchStop" class="button">검색 중지</button>
+									<div id="stopModal" class="modal">
+										<div class="modal-content">                                                         
+											<p>종료되는데 1분정도 소요됩니다.</p>
+											<span class="close">&times;</span> 
+										</div>
+									</div>
+									
+								<button type="button" id="resetDash" class="button">대시보드 초기화</button>
+									<div id="resetModal" class="modal">
+										<div class="modal-content">                                                             
+											<p>대시보드를 초기화합니다.</p>
+											<span class="close">&times;</span> 
+										</div>
+									</div>
+							</div>
+					</div>
+				</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/visualizaion.js"></script>
+	</body>
+</html>

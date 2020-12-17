@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/*바디*/
+body
+{
+	width:40%;
+
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-radius: 10px;
+
+	padding: 40px 30px;
+	margin: 80px 460px;
+	
+	text-align:left;
+}
+
+body:before
+{
+  height:100%;
+
+  display:inline-block;
+
+  vertical-align:middle;
+}
+
+/*입력창*/
+input[type=text], select
+{
+	width: 90%;
+
+	padding: 15px 20px;
+
+	margin: 10px 0px;
+
+	display: inline-block;
+	
+	border: 2px solid #ccc;
+	border-radius: 4px;
+
+	box-sizing: border-box;
+}
+
+/*버튼*/
+button
+{
+  text-align:center;
+  
+  background:#1AAB8A;
+  color:#fff;
+  
+  border:0px;
+  border-radius:4px;
+
+  position:relative;
+  height:60px;
+
+  font-size:20px;
+
+  margin:20px 0px;
+  padding:0px 15px;
+
+  cursor:pointer;
+
+  transition:800ms ease all;
+
+  outline:none;
+
+  height:45px;
+  
+  vertical-align:middle;
+}
+
+button:hover
+{
+  background:#fff;
+
+  color:#1AAB8A;
+}
+
+button:before,button:after
+{
+  content:'';
+
+  position:absolute;
+
+  top:0px;
+  right:0px;
+
+  height:2px;
+  width:0px;
+
+  background: #1AAB8A;
+
+  transition:400ms ease all;
+}
+
+button:after
+{
+  right:inherit;
+  top:inherit;
+  left:0px;
+  bottom:0px;
+}
+
+button:hover:before,button:hover:after
+{
+  width:100%;
+  
+  transition:800ms ease all;
+}
+
+.naverLayer
+{
+	display: none;
+}
+
+.googleLayer
+{
+	display: none;
+}
+
+.kakaoLayer
+{
+	display: none;
+}
+

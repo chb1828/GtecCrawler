@@ -1,0 +1,113 @@
+PUT items1
+{
+  "settings" : {
+      "index" : {
+        "analysis" : {
+            "analyzer" : {
+            "korean_analyzer" : {
+              "filter" : [
+                "pos_filter_speech",
+                "nori_readingform",
+                "lowercase"
+              ],
+              "type" : "custom",
+              "tokenizer" : "nori_user_dict_tokenizer"
+            }
+          },
+          "filter" : {
+            "pos_filter_speech" : {
+              "type" : "nori_part_of_speech",
+              "stoptags" : [
+                "E",
+                "IC",
+                "J",
+                "MAG",
+                "MAJ",
+                "MM",
+                "NA",
+                "NNB",
+                "NNBC",
+                "NP",
+                "NR",
+                "SC",
+                "SE",
+                "SF",
+                "SH",
+                "SL",
+                "SN",
+                "SP",
+                "SSC",
+                "SSO",
+                "SY",
+                "UNA",
+                "UNKNOWN",
+                "VA",
+                "VCN",
+                "VCP",
+                "VSV",
+                "VV",
+                "VX",
+                "XPN",
+                "XR",
+                "XSA",
+                "XSN",
+                "XSV"
+              ]
+            }
+          },
+          "tokenizer" : {
+            "nori_user_dict_tokenizer" : {
+              "type" : "nori_tokenizer",
+              "user_dictionary" : "userdict_ko.txt",
+              "mode" : "none"
+           }
+         }
+      }
+    }
+  }
+}
+
+DELETE items1
+
+GET items1/_settings
+
+GET items1/_search
+{
+  "query": {
+    "term":{
+      "htmlText":"년"
+    }
+  }
+}
+
+
+POST items2/_delete_by_query
+{
+    "query" : {
+        "match" : {
+            "_type" : "item"
+        }
+    }
+}
+
+POST items1/_update_by_query
+{
+  "script":{
+    "source":"ctx._source.htmlText='대'"
+  },
+    "query" : {
+        "term" : {
+            "htmlText":"대학"
+        }
+    }
+}
+
+POST items1/_analyze
+{
+  "analyzer": "korean_analyzer",
+  "text":"경기과학기술대학교"
+}
+POST items1/_open
+POST items1/_close
+
+POST items1/_update_by_query
